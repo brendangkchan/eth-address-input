@@ -1,11 +1,16 @@
 {
   "name": "eth-address-input",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "private": true,
   "dependencies": {
+    "ethereum-ens": "^0.7.3",
+    "lodash": "^4.17.4",
+    "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts-ts": "2.13.0"
+    "react-scripts-ts": "2.13.0",
+    "web3": "^0.20.4",
+    "web3-typescript-typings": "^0.9.8"
   },
   "scripts": {
     "start": "react-scripts-ts start",

@@ -1,12 +1,13 @@
 import * as React from 'react';
-import './App.css';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Input from './Input';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        Empty React App
-      </div>
+      <MuiThemeProvider>
+        <Input />
+      </MuiThemeProvider>
     );
   }
 }
