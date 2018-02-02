@@ -1,3 +1,6 @@
+#### 0.8.0
+- Update Readme
+
 #### 0.7.1
 - Fix conflicting types and indentation
 
