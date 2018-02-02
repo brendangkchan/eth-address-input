@@ -30,8 +30,10 @@ This React TypeScript component validates Ethereum address with ENS support.
 To demo this component in your browser, go to http://localhost:3000/
 ```
 # then run these commands
+git clone git@github.com:brendangkchan/eth-address-input.git
+cd eth-address-input/
 npm i
-npm start
+npm start # be sure to be on Node v6 or above or this will error out on compiling ES6
 ```
 
 ### Dev Notes
