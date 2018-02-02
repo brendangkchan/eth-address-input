@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "outDir": "build/dist",
     "module": "esnext",
     "target": "es5",
@@ -17,6 +18,10 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true
   },
+  "include": [
+    "src/**/*",
+    "./node_modules/web3-typescript-typings/index.d.ts"
+  ],
   "exclude": [
     "node_modules",
     "build",
