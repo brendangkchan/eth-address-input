@@ -9,10 +9,10 @@ This React TypeScript component validates Ethereum address with ENS support.
 * Token balance checking
 
 ### Screenshots
-![valid eth address](https://imgur.com/x93jjTR)
-![valid ens name](https://imgur.com/aic4CsM)
-![invalid eth address](https://imgur.com/s50KU0v)
-![invalid ens name](https://imgur.com/3tYqanX)
+[Imgur](https://i.imgur.com/x93jjTR.png)
+[Imgur](https://i.imgur.com/aic4CsM.png)
+[Imgur](https://i.imgur.com/s50KU0v.png)
+[Imgur](https://i.imgur.com/3tYqanX.png)
 
 ### Setup
 * Start a [local Ethereum node](https://github.com/ethereum/go-ethereum/wiki/geth)
