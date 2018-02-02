@@ -1,3 +1,6 @@
+#### 0.7.1
+- Fix conflicting types and indentation
+
 #### 0.7.0
 - Tests for user feedback messages
 
