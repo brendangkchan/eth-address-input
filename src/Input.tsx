@@ -1,6 +1,6 @@
 import * as React from 'react';
 import TextField from 'material-ui/TextField';
-import { get } from 'lodash';
+import { get, noop } from 'lodash';
 import { resolveNameToAddr, reverseAddrToName } from './helpers/ens';
 import getInputText from './helpers/input-text';
 import getTokenBalance from './helpers/tokens';
@@ -9,6 +9,7 @@ var web3 = web3 || window['web3']; // tslint:disable-line no-string-literal
 
 interface InputProps {
   takerToken: string;
+  callback: Function;
 }
 interface InputState {
   value: string | null;
@@ -31,6 +32,11 @@ const style = {
 };
 
 export default class Input extends React.Component<InputProps, InputState> {
+  public static defaultProps: Partial<InputProps> = {
+    takerToken: '',
+    callback: noop,
+  };
+
   constructor(props: InputProps) {
     super(props);
     this._updateState = this._updateState.bind(this);
@@ -79,6 +85,7 @@ export default class Input extends React.Component<InputProps, InputState> {
   private _onChange(e: any): void {
     const value = get(e, 'target.value', '');
     this._updateState(value);
+    this.props.callback(value);
   }
 
   private _renderBalance(): React.ReactNode {

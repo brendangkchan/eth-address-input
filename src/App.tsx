@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
     return (
       <MuiThemeProvider>
-        <Input takerToken="ETH" />
+        <Input takerToken="ETH" callback={(value) => { console.log(value); }}/>
       </MuiThemeProvider>
     );
   }
