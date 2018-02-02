@@ -1,3 +1,7 @@
+#### 0.5.0
+- Add `takerToken` prop
+- Stub out balance feature
+
 #### 0.4.0
 - Remove unnecessary template files
 
