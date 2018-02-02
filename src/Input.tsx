@@ -66,6 +66,7 @@ export default class Input extends React.Component<InputProps, InputState> {
   }
 
   private async _updateState(value: string): Promise<any> {
+    const isEthAddress = web3.isAddress(value);
     const ensNameMatch = await reverseAddrToName(value);
     const ensAddrMatch = await resolveNameToAddr(value);
     const balance = await getTokenBalance(this.props.takerToken, value);
@@ -75,6 +76,7 @@ export default class Input extends React.Component<InputProps, InputState> {
       labelText
     } = getInputText({
       value,
+      isEthAddress,
       ensNameMatch,
       ensAddrMatch
     });

@@ -1,7 +1,6 @@
 import { startsWith } from 'lodash';
 
 const ETH_ADDRESS_PREFIX = '0x';
-var web3 = web3 || window['web3']; // tslint:disable-line no-string-literal
 
 interface InputText {
   errorText: string | null;
@@ -9,6 +8,7 @@ interface InputText {
 }
 interface GetInputTextParams {
   value: string;
+  isEthAddress: boolean;
   ensNameMatch: string | null;
   ensAddrMatch: string | null;
 }
@@ -16,11 +16,11 @@ interface GetInputTextParams {
 export default function getInputText(params: GetInputTextParams): InputText  {
   const {
     value,
+    isEthAddress,
     ensNameMatch,
     ensAddrMatch,
   } = params;
   const mayBeEthAddress = startsWith(value, ETH_ADDRESS_PREFIX);
-  const isEthAddress = web3.isAddress(value);
   let errorText;
   let labelText;
 

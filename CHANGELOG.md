@@ -1,3 +1,6 @@
+#### 0.7.0
+- Tests for user feedback messages
+
 #### 0.6.0
 - Add `callback` prop
 
