@@ -2,6 +2,38 @@
 
 This React TypeScript component validates Ethereum address with ENS support.
 
+### Features
+* ENS integration (can input ieither ETH addresses or ENS names)
+* Real time user feedback and validation
+##### In development
+* Token balance checking
+
+### Screenshots
+![valid eth address](https://imgur.com/x93jjTR)
+![valid ens name](https://imgur.com/aic4CsM)
+![invalid eth address](https://imgur.com/s50KU0v)
+![invalid ens name](https://imgur.com/3tYqanX)
+
+### Setup
+* Start a [local Ethereum node](https://github.com/ethereum/go-ethereum/wiki/geth)
+* Have a registered name in the [ENS](https://docs.ens.domains/en/latest/)
+
+### Usage
+```
+<Input
+    takerToken="ETH"
+    callback={(value) => { console.log(value); }}
+/>
+```
+
+### Demo locally
+To demo this component in your browser, go to http://localhost:3000/
+```
+# then run these commands
+npm i
+npm start
+```
+
 ### Dev Notes
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

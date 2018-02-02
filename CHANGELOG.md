@@ -1,3 +1,12 @@
+#### 0.8.0
+- Update Readme
+
+#### 0.7.1
+- Fix conflicting types and indentation
+
+#### 0.7.0
+- Tests for user feedback messages
+
 #### 0.6.0
 - Add `callback` prop
 
